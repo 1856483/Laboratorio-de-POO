@@ -1,0 +1,26 @@
+public class Calculadora extends DispositivoElectronico implements IOperacionesAritmeticas,ConfiguracionMenu{
+
+    @Override
+    public String encender() {
+        return "Calculadora encidende";
+    }
+
+    @Override
+    public String apagar() {
+        return "Calculadora apagada";
+    }
+
+    @Override
+    public int suma(int a, int b) {
+         return a+b;
+    }
+
+    @Override
+    public int resta(int a, int b) {
+        return a-b;
+    }
+
+    @Override
+    public String menuPredeterminado() {
+        return "Menu no modificado por usuario";
+    }
