@@ -1,0 +1,96 @@
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args){
+        Autos carro = new Autos("Nisssan ","Tsuru ","Azul ",150000);
+        Trenes tren = new Trenes("Mexico", "Dolores","Amarillo", 15000000);
+        ArrayList<Autos> misautos = new ArrayList<>();
+        ArrayList<Trenes> mistrenes = new ArrayList<>();
+        
+        System.out.println("AUTOS\n");
+        misautos.add(carro);
+        System.out.println(misautos.size() );
+        System.out.println(misautos);
+        carro.encender();
+        carro.acelerar();
+        carro.Derecha();
+        carro.frenar();
+        carro.apagar();
+        misautos.add(new Autos("Nisssan ","versa ","Rojo ",200000));
+        System.out.println("\n" + misautos.size());
+        System.out.println(misautos.get(1));
+        carro.encender();
+        carro.acelerar();
+        carro.Derecha();
+        carro.frenar();
+        carro.apagar();
+        misautos.add(new Autos("Mazda ","5 ","Gris ",100000));
+        System.out.println("\n" + misautos.size() );
+        System.out.println(misautos.get(2));
+        carro.encender();
+        carro.acelerar();
+        carro.Izquierda();
+        carro.frenar();
+        carro.apagar();
+        misautos.add(new Autos("Tesla ","Model X ","Azul ",500000));
+        System.out.println( "\n" + misautos.size());
+        System.out.println(misautos.get(3));
+        carro.encender();
+        carro.acelerar();
+        carro.Izquierda();
+        carro.frenar();
+        carro.apagar();
+        misautos.add(new Autos("Tesla ","Model 3 ","Azul ",950000));
+        System.out.println("\n" + misautos.size());
+        System.out.println(misautos.get(4));
+        carro.encender();
+        carro.acelerar();
+        carro.Derecha();
+        carro.frenar();
+        carro.apagar();
+        
+        System.out.println("******************************************************");
+        System.out.println("TRENES");
+        mistrenes.add(tren);
+        System.out.println("\n" + mistrenes.size());
+        System.out.println(mistrenes);
+        tren.acelerar();
+        tren.acelerar();
+        tren.Derecha();
+        tren.frenar();
+        tren.apagar();
+        mistrenes.add(new Trenes("Mexico ", "La paz ","Azul con negro", 15000000));
+        System.out.println("\n" + mistrenes.size());
+        System.out.println(mistrenes.get(1));
+        carro.encender();
+        carro.acelerar();
+        carro.Izquierda();
+        carro.frenar();
+        carro.apagar();
+        mistrenes.add(new Trenes("Fleischmann ", "Fleischmann H0 ","Rojo con negro ", 25000000));
+        System.out.println("\n" + mistrenes.size());
+        System.out.println(mistrenes.get(2));
+        carro.encender();
+        carro.acelerar();
+        carro.Derecha();
+        carro.frenar();
+        carro.apagar();
+        mistrenes.add(new Trenes("Brawa ", "Remshalden ","Negro con cafe ", 2000000));
+        System.out.println("\n" + mistrenes.size());
+        System.out.println(mistrenes.get(3));
+        carro.encender();
+        carro.acelerar();
+        carro.Izquierda();
+        carro.frenar();
+        carro.apagar();
+        mistrenes.add(new Trenes("Seuthe ", "Startrain ","Blanco ", 1000000));
+        System.out.println("\n" + mistrenes.size());
+        System.out.println(mistrenes.get(4));
+        carro.encender();
+        carro.acelerar();
+        carro.Izquierda();
+        carro.frenar();
+        carro.apagar();
+        
+    }
+}
