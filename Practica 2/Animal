@@ -1,0 +1,9 @@
+
+package com.mycompany.practica_2;
+
+public class Animal {
+    
+    public String comer(){
+        return "Animal comiendo";
+    }  
+}
