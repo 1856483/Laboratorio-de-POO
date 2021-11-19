@@ -1,0 +1,114 @@
+package practica5;
+import java.util.Scanner;
+
+public class Practica5 {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Telefono c = new Telefono();
+        Scanner entrada = new Scanner (System.in);
+        int n1, resultado, opcion;
+        boolean op = true;
+        while(op){
+                System.out.println("Menu");
+                System.out.println("1. Contacto1");
+                System.out.println("2. Contacto2");
+                System.out.println("3. Contacto3");
+                System.out.println("4. Contacto4");
+                System.out.println("5. Contacto5");
+                System.out.println("6. Salir");
+                System.out.print("Seleccione opcion: ");
+                opcion = entrada.nextInt();
+                if (opcion == 6){
+                    System.out.println("Finalizo");
+                    break;
+                } else{
+                    switch(opcion){
+                        case 1:
+                            System.out.println("Contacto1: ");
+                            c.setMarca("Hawei");
+                            c.setPrecio(2500);
+                            c.setModelo("lite");
+                            c.setColor("gris");
+                            System.out.println("Marca: "+c.getMarca());
+                            System.out.println("Precio: "+c.getPrecio());
+                            System.out.println("Modelo: "+c.getModelo());
+                            System.out.println("Color: "+c.getColor());
+                            c.Conexion();
+                            System.out.println("Inicia llamada");
+                            c.Numero();
+                            c.Nombrecontacto();
+                            c.Finalizar();
+                            break;
+                        case 2:
+                            System.out.println("Contacto2: ");
+                            c.setMarca("Samsung");
+                            c.setPrecio(2800);
+                            c.setModelo("Galaxy");
+                            c.setColor("Blanco");
+                            System.out.println("marca: "+c.getMarca());
+                            System.out.println("precio: "+c.getPrecio());
+                            System.out.println("modelo: "+c.getModelo());
+                            System.out.println("color: "+c.getColor());
+                            c.Conexionf();
+                            System.out.println("Inicia llamada");
+                            c.Numero2();
+                            c.Nombrecontacto2();
+                            c.Finalizar();
+                            break;
+                        case 3:
+                            System.out.println("Contacto3: ");
+                            c.setMarca("Hawei");
+                            c.setPrecio(1500);
+                            c.setModelo("mate 20");
+                            c.setColor("Negro");
+                            System.out.println("marca: "+c.getMarca());
+                            System.out.println("precio: "+c.getPrecio());
+                            System.out.println("modelo: "+c.getModelo());
+                            System.out.println("color: "+c.getColor());
+                            c.Conexion();
+                            System.out.println("Inicia llamada");
+                            c.Numero3();
+                            c.Nombrecontacto3();
+                            c.Finalizar();
+                            break;
+                        case 4:
+                            System.out.println("Contador4: ");
+                            c.setMarca("Xiaomi");
+                            c.setPrecio(4000);
+                            c.setModelo("Redmi Note 9");
+                            c.setColor("Azul");
+                            System.out.println("Marca: "+c.getMarca());
+                            System.out.println("Precio: "+c.getPrecio());
+                            System.out.println("Modelo: "+c.getModelo());
+                            System.out.println("Color: "+c.getColor());
+                            c.Conexionf();
+                            System.out.println("Inicia llamada");
+                            c.Numero4();
+                            c.Nombrecontacto4();
+                            c.Finalizar();
+                            break;
+                        case 5:
+                            System.out.println("Contacto5: ");
+                            c.setMarca("Apple");
+                            c.setPrecio(7000);
+                            c.setModelo("Iphone8");
+                            c.setColor("Rojo");
+                            System.out.println("Marca: "+c.getMarca());
+                            System.out.println("Precio: "+c.getPrecio());
+                            System.out.println("Precio: "+c.getModelo());
+                            System.out.println("Color: "+c.getColor());
+                            c.Conexion();
+                            System.out.println("Inicia llamada");
+                            c.Numero5();
+                            c.Nombrecontacto5();
+                            c.Finalizar();
+                            break;
+                        default:
+                            System.out.println("--->>> Opcion no valida <<<---");
+    }
+}
+    }
+    
+}
+}
