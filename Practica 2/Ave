@@ -1,0 +1,8 @@
+package com.mycompany.practica_2;
+
+public class Ave extends Animal{
+    public String volar(){
+        return "Ave volando";
+    } 
+    
+}
