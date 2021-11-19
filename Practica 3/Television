@@ -1,0 +1,61 @@
+package Practica3;
+
+import java.util.Scanner;
+
+public class Television extends DispositivoElectronico implements IFunciones, IOperacionesAritmeticas, ConfiguracionMenu {
+
+    @Override
+    public String encender() {
+        return "Television Encendida";
+    }
+
+    @Override
+    public String apagar() {
+        return "Television Apagada";
+    }
+
+    @Override
+    public String cambioCanal() {
+        Scanner entrada = new Scanner(System.in);
+        float canal;
+        
+        System.out.print("Digite un canal:");
+        canal = entrada.nextFloat();
+        
+        System.out.println("El canal es: "+canal);
+        return null;
+    }
+
+    @Override
+    public String volumen() {
+        Scanner entrada = new Scanner(System.in);
+        float volumen;
+        
+        System.out.print("Digite el nivel de volumen:");
+        volumen = entrada.nextFloat();
+        
+        System.out.println("El volumen es: "+volumen);
+        return null;
+    }
+
+    @Override
+    public int suma(int a, int b) {
+        return a+b;
+    }
+
+    @Override
+    public int resta(int a, int b) {
+        return a-b;
+    }
+
+    @Override
+    public String menuPredeterminado() {
+        return "Menu no modificado por usuario";
+    }
+
+    @Override
+    public String menuModificado() {
+        return "Menu modificado por usuario";
+    }
+    
+}
