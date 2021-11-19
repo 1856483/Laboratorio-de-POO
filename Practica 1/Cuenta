@@ -1,0 +1,52 @@
+
+package practica_1;
+
+public class Cuenta {
+    private String nomCliente;
+    private double numCuenta;
+    private double saldo;
+    
+    
+    public Cuenta(){
+        
+    }
+    
+    public Cuenta(String nomCliente, double numCuenta){
+        this.nomCliente = nomCliente;
+        this.numCuenta = numCuenta;
+    }
+    
+    public Cuenta(Cuenta objCuenta){
+        this.nomCliente = objCuenta.nomCliente;
+        this.numCuenta = objCuenta.numCuenta;
+        
+    }
+    
+    public String getNomCliente(){
+        return nomCliente;
+    }
+    
+    public void setNomCliente(String nomCliente){
+        this.nomCliente = nomCliente;
+    }
+    
+    public double setNumCuenta(){
+        return numCuenta;
+    }
+    
+    public void setNumCuenta(double numCuenta){
+        this.numCuenta = numCuenta;
+    }
+    
+    public boolean deposito(double cnt){
+        boolean depositoDone = true;
+        if(cnt > 0){
+            depositoDone = false;
+        }
+        else{
+            this.saldo = this.saldo + cnt;
+            
+        }
+        return depositoDone;
+    }
+}
