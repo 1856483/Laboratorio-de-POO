@@ -1,0 +1,8 @@
+package com.mycompany.practica_2;
+
+public class Perico extends Ave {
+    public void hablar (){ 
+        System.out.println("habla con las personas");
+    }
+    
+}
