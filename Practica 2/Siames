@@ -1,0 +1,9 @@
+package com.mycompany.practica_2;
+
+public class Siames extends Gato{
+    
+    public void dormir(){ 
+        System.out.println("Gato Siames durmiendo 16hrs");
+    }
+    
+}
