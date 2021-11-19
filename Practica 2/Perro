@@ -1,0 +1,16 @@
+package com.mycompany.practica_2;
+
+public class Perro extends Animal {
+    
+    public String ladrar(){
+        return "Perro ladrando";
+        
+    }
+    public String caminar(){
+        return "Perro caminando";
+    }
+    public String correr(){
+        return "Perro corriendo";
+    }
+    
+}
