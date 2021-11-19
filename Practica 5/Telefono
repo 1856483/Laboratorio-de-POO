@@ -1,0 +1,76 @@
+package practica5;
+
+public class Telefono {
+    private String Marca;
+  private String Modelo;
+  private String Color;
+  private int Precio;
+    public String getMarca() {
+        return Marca;
+    }
+    public void setMarca(String Marca) {
+        this.Marca = Marca;
+    }
+    public String getModelo() {
+        return Modelo;
+    }
+    public void setModelo(String Modelo) {
+        this.Modelo = Modelo;
+    }
+    public String getColor() {
+        return Color;
+    }
+    public void setColor(String Color) {
+        this.Color = Color;
+    }
+    public int getPrecio() {
+        return Precio;
+    }
+    public void setPrecio(int Precio) {
+        this.Precio = Precio;
+    }
+    
+    
+    
+    
+    public void Conexion(){
+        System.out.println("Conexion Activada");
+    }
+    public void Conexionf(){
+        System.out.println("Conexion Desactivada");
+    }
+    
+    public void Nombrecontacto(){
+        System.out.println("Raul");
+    }
+    public void Nombrecontacto2(){
+        System.out.println("Pedro");
+    }
+    public void Nombrecontacto3(){
+        System.out.println("Rodrigo");
+    }
+    public void Nombrecontacto4(){
+        System.out.println("Carmen");
+    }
+    public void Nombrecontacto5(){
+        System.out.println("Ana");
+    }
+    public void Finalizar(){
+        System.out.println("Llamada finalizada");
+    }
+    public void Numero(){
+        System.out.println("8115646405");
+    }
+    public void Numero2(){
+        System.out.println("81234518795");
+    }
+    public void Numero3(){
+        System.out.println("8147623145");
+    }
+    public void Numero4(){
+        System.out.println("8197523648");
+    }
+    public void Numero5(){
+        System.out.println("8169741235");
+    }
+}
