@@ -1,0 +1,9 @@
+package com.mycompany.practica_2;
+
+public class Persa extends Gato{
+    
+    public void juega(){ 
+        System.out.println("juega con el estambre durante la tarde");
+    }
+    
+}
