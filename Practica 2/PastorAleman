@@ -1,0 +1,7 @@
+package com.mycompany.practica_2;
+
+public class PastorAleman extends Perro{
+     public void cuidar(){ 
+        System.out.println("Cuida la casa");
+     }   
+}
