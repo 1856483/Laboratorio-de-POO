@@ -1,0 +1,58 @@
+
+package com.mycompany.practica_2;
+
+import  java.util.Scanner;
+
+public class RunPractica_2 {
+
+    public static void main(String[] args) {
+        
+        Scanner scnRza = new Scanner(System.in);
+        System.out.print("Introduce Raza del animal:");
+        String rzaAnimal = scnRza.nextLine();
+        
+        System.out.println(rzaAnimal);
+        
+        PastorAleman pa = new PastorAleman();
+        System.out.println(pa.caminar());
+        System.out.println(pa.comer());
+        System.out.println(pa.correr());
+        pa.cuidar();
+        
+        Chihuahua chi= new Chihuahua();
+        System.out.println(chi.caminar());
+        System.out.println(chi.comer());
+        System.out.println(chi.correr());
+        chi.energico();
+        
+        
+        Persa per = new Persa();
+        System.out.println(per.brincar());
+        System.out.println(per.comer());
+        System.out.println(per.maullar());
+        per.juega();
+        
+        Siames sia = new Siames();
+        System.out.println( sia.brincar());
+        System.out.println(sia.comer());
+        System.out.println(sia.maullar());
+        sia.dormir();
+        
+        Canario can = new Canario();
+        System.out.println(can.comer());
+        System.out.println(can.volar());
+        can.cantar();
+        
+        Perico pe = new Perico();
+        System.out.println(pe.comer());
+        System.out.println(pe.volar());
+        pe.hablar();
+        
+        
+        
+        
+        
+        
+    }
+    
+}
