@@ -1,0 +1,8 @@
+package com.mycompany.practica_2;
+
+public class Chihuahua extends Perro{
+     public void energico (){ 
+        System.out.println("Tiene mucha energia para pasear");
+    }
+    
+}
