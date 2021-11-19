@@ -1,0 +1,35 @@
+
+package practica_1;
+import java.util.Scanner;
+
+public class Practica_1 {
+
+    public static void main(String[] args) {
+
+        Scanner scnNom = new Scanner(System.in);
+        System.out.println("Titular de la cuenta: ");
+        String nom = scnNom.nextLine();
+        
+        Scanner scnCuenta = new Scanner(System.in);
+        System.out.println("Cuenta: ");
+        String cuenta = scnCuenta.nextLine();
+        
+        
+        
+        System.out.println(nom);
+        Cuenta cta = new Cuenta();
+        //Cuenta cta = new Cuenta(nom, "1856483", .10, 5000.39);
+        
+        
+        
+        
+        cta.deposito(1000);
+        cta.retiro(500);
+        get.saldo();
+        transferencia(cuentaDestino.importe)
+                1 mayor al saldo
+                1 menor al saldo
+        get.saldo()
+    }
+    
+}
